@@ -1,7 +1,7 @@
 import { useState } from "react";
-import TeamCard from "../Components/TeamCard";
-import SearchBar from "../Components/SearchBar";
-import { getTeamsByLeague } from "../API/sportsApi";
+import TeamCard from "../components/teamcard";
+import SearchBar from "../components/searchbar";
+import { getTeamsByLeague } from "../api/sportsApi";
 
 function Home() {
   const [teams, setTeams] = useState([]);

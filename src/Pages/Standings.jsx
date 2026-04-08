@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getTeamsByLeague } from "../API/sportsApi";
+import { getTeamsByLeague } from "../api/sportsApi";
 
 function Standings() {
   const [teams, setTeams] = useState([]);
