@@ -7,8 +7,8 @@ function Navbar() {
 
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/standings">League Overview</Link>
-        <Link to="/favorites">Favorites</Link>
+        <Link to="/Standings"> League Overview </Link>
+        <Link to="/Favorites">Favorites</Link>
       </div>
     </nav>
   );
