@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Home from "./Pages/Home";
-import Standings from "./Pages/Standings";
-import Favorites from "./Pages/Favorites";
-import TeamDetails from "./Pages/TeamDetails";
+import Navbar from "./components/navbar";
+import Home from "./pages/home";
+import Standings from "./pages/standings";
+import Favorites from "./pages/favorites";
+import TeamDetails from "./pages/teamdetails";
 
 function App() {
   return (
