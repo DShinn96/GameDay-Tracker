@@ -1,11 +1,28 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function Favorites() {
+  const { user } = useAuth();
   const [favorites, setFavorites] = useState([]);
 
+  if (!user) {
+    return (
+      <div className="page-header">
+        <h1>Favorite Teams</h1>
+        <p>Please log in to view your favorite teams.</p>
+        <Link to="/login" className="login-link-btn">
+          Go to Login
+        </Link>
+      </div>
+    );
+  }
+
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("favorites")) || [];
+    const user = JSON.parse(localStorage.getItem("mockUser"));
+    const key = user ? `favorites_${user.username}` : "favorites_guest";
+
+    const stored = JSON.parse(localStorage.getItem(key)) || [];
     setFavorites(stored);
   }, []);
 
@@ -25,6 +42,7 @@ function Favorites() {
       {favorites.length === 0 ? (
         <div className="empty-state">
           <p>No favorite teams yet.</p>
+          <p>Go add some from the home page. ⭐</p>
         </div>
       ) : (
         <div className="team-grid">

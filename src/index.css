@@ -377,3 +377,29 @@ p {
     font-size: 14px;
   }
 }
+
+.fav-message {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.login-link-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #111827;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-link-btn:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { getLastEvents, getNextEvents } from "../api/sportsApi";
+import { useNavigate } from "react-router-dom";
 
 function TeamDetails() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ function TeamDetails() {
   const [nextGames, setNextGames] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function loadTeamData() {
@@ -51,6 +53,9 @@ function TeamDetails() {
 
   return (
     <div className="team-details-page">
+      <button onClick={() => navigate(-1)} className="favorite-btn">
+        ← Back
+      </button>
       <div className="team-header-card">
         <img
           src={team.strBadge || "https://via.placeholder.com/100"}
