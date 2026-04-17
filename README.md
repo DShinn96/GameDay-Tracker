@@ -1,16 +1,69 @@
-# React + Vite
+# 🏟️ GameDay Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive sports web application that allows users to explore teams, view game data, and save favorites — built with React and deployed on Vercel.
 
-Currently, two official plugins are available:
+🔗 **Live App:** https://game-day-tracker.vercel.app/  
+📦 **GitHub Repo:** https://github.com/DShinn96/GameDay-Tracker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Browse teams by league (NBA, NFL, MLB, NHL)
+- 📊 View team details, recent games, and upcoming matchups
+- ⭐ Add and remove favorite teams
+- 👤 Mock user authentication (login/signup)
+- 💾 Favorites persist per user using localStorage
+- 📱 Fully responsive design
+- ⚡ Fast performance with Vite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **Frontend:** React
+- **Routing:** React Router
+- **Build Tool:** Vite
+- **Styling:** CSS
+- **API:** TheSportsDB
+- **Deployment:** Vercel
+
+---
+
+## 🧠 How It Works
+
+- Users can select a league and browse teams
+- Clicking a team shows game data (recent + upcoming)
+- Users can "log in" with a mock username system
+- Favorites are stored locally per user using dynamic keys:
+
+favorites\_{username}
+
+---
+
+## 📸 Screenshots
+
+> (Add screenshots here once you take them)
+
+### Home Page
+
+![Home](./screenshots/home.png)
+
+### Team Details
+
+![Team Details](./screenshots/team-details.png)
+
+### Favorites Page
+
+![Favorites](./screenshots/favorites.png)
+
+---
+
+## 🧪 Local Development
+
+```bash
+git clone https://github.com/DShinn96/GameDay-Tracker.git
+cd GameDay-Tracker
+npm install
+npm run dev
+```
