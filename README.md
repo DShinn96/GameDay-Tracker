@@ -43,7 +43,6 @@ favorites\_{username}
 
 ## 📸 Screenshots
 
-> (Add screenshots here once you take them)
 
 ### Home Page
 
