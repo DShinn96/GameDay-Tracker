@@ -66,3 +66,21 @@ cd GameDay-Tracker
 npm install
 npm run dev
 ```
+⚠️ Notes
+● Authentication is mocked using localStorage (no real user data is stored)
+● Some API endpoints may return limited data depending on availability
+
+📌 Future Improvements
+● Real authentication (Supabase or Firebase)
+● Backend database for persistent storage
+● Advanced team stats and standings
+● Search functionality
+● UI animations and loading states
+
+🙌 Author
+
+David Shinn
+GitHub: https://github.com/DShinn96
+
+⭐ If you like this project give it a star ⭐
+
